@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, modern font */
+    margin: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    color: #fff; /* White text color */
+    padding: 10px; /* Spacing inside navbar */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar h2 {
+    margin: 0; /* Remove default margin */
+}
+
+/*  */
+
+.container {
+    width: 50%; /* Set width to 50% of the viewport */
+    margin: 20px auto; /* Auto margin for left/right centering, with 20px top/bottom margin */
+    padding: 20px; /* Padding inside the container */
+    background-color: #fff; /* White background for the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.container h2 {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.leaderboard {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+}
+
+.leaderboard th, .leaderboard td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Padding inside cells */
+    text-align: center; /* Centered text */
+}
+
+.leaderboard th {
+    background-color: #49474E; /* Green background for headers */
+    color: white; /* White text for headers */
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.leaderboard tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.leaderboard td {
+    font-size: 1.1em; /* Slightly larger font for scores */
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #1a191b;
+    color: white;
+}
+
+
+.header { 
+    grid-area: 1 / 1 / 2 / 4; 
+    padding: 12px;
+}
+.header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.home {
+    grid-area: 1 / 4 / 2 / 6;
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-end; /* Align items to the right */
+    padding-right: 24px;
+    margin: 20px 0;
+     }
+
+     
+.home .button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove underline */
+}
+
+.home .button a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.home .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.home .button:focus {
+    outline: none; /* Remove outline on focus */
+}
